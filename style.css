@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 img{
     width: 100%;
 }
@@ -87,4 +90,33 @@ input:focus{
 .settings button{
     border: none;
     background-color: transparent;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 70px;
+    place-items: center;
+    gap: 15px;
+    
+}
+.menu ul{
+    list-style: none;
+    
+}
+.menu li{
+    display: grid;
+    grid-template-columns: 60px;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 15px;
+}
+.menu img{
+    width: 30px;
+}
+.menu li a{
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+}
+
+.menu li:hover{
+    background-color: rgb(202, 199, 199);
 }
